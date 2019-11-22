@@ -1,0 +1,17 @@
+public class Anagram {
+    public static void main(String[] arg) {
+        int sum=0,temp,r;
+        int n=153;
+        temp=n;
+        while(n>0) {
+            r=n%10;
+            n=n/10;
+            sum=sum+(r*r*r);
+        }
+        if(temp==sum) 
+            System.out.println("its a anagram");
+            else 
+             System.out.println("its a not anagram");
+        }
+            
+        }
