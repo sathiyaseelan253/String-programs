@@ -1,0 +1,24 @@
+import java.util.*;
+public class RomoveDuplicates {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in) ;
+        System.out.println("enter the String");
+        String a=s.nextLine();
+        System.out.println(removeDuplicate(a));
+    }
+    public static String removeDuplicate(String a) {
+        
+        HashSet<Character> c=new HashSet<>();
+        StringBuffer bf=new StringBuffer();
+       for(int i=0;i<a.length();i++) {
+        Character f=a.charAt(i);
+        
+        if(!c.contains(f)){
+            c.add(f);
+            //bf.append(c);
+            
+        }
+       }
+   return c.toString();
+    }
+}
