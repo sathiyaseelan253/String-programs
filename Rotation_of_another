@@ -1,0 +1,26 @@
+import java.util.*;
+public class RotateinOrder {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the 1 string");
+        String a=s.nextLine();
+                System.out.println("enter the 2 string");
+         String b=s.nextLine();
+         if(a.length()!=b.length()) {
+             System.out.println("give a valid");
+         }
+         else {
+            String d=a+a;
+         
+         if(d.contains(b)) 
+             System.out.println("true");
+         
+         else 
+             System.out.println("false");
+         
+         }
+         }
+             
+         }
+         
+    
