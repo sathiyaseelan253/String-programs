@@ -1,0 +1,21 @@
+import java.util.*;
+public class Factorial {
+   static int fact=1;
+    public static void main(String args[]) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the no:");
+        int no=s.nextInt();
+        factorial  obj=new factorial ();
+        obj.calculate(no);
+        System.out.println(fact);
+    }
+    int calculate(int no) {
+        if(no>0){
+            fact=fact*no;
+            calculate(no-1);
+        }
+        return fact;
+        
+            
+    }
+}
